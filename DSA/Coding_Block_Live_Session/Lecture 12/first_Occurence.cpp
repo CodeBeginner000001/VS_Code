@@ -1,6 +1,6 @@
 /*
 WAP to find the index of the first occurrence of T in the
-givenn array.
+given array.
 
 note: output -1 if T is not present in the given array
 

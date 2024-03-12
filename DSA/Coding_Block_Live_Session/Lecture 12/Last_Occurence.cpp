@@ -1,3 +1,12 @@
+/*
+Last Occurrence 
+ 
+Given an array of N integers, and an integer T, design an 
+algorithm to find the index of the last occurrence of T in 
+the given array. 
+ 
+note : output -1 if T is not present in the given array. 
+*/
 #include <iostream>
 using namespace std;
 int main()
