@@ -1,18 +1,23 @@
 /*
-Three Largest Elements
+Maximum Product of a Triplet
 
-Given an array of  N  integers, design an algorithm
-to find the three largest elements present inside
-the given array
+Given an array of  N integers, design an algorithm
+to find the maximum product of a triplet present
+inside the given array.
 
 Example
 
-Input
-0  1  2   3  4   5
-20 5  0  25  15  10
+Input:
+0  1 2  3  4
+20 5 25 15 10
 
-Output
-15 20 25
+Output : 7500
+
+Input:
+0    1  2 3 4
+-10 -20 1 2 3
+
+Output : 600
 
 */
 #include <iostream>
@@ -29,6 +34,8 @@ int main()
     int f1 = INT_MIN;
     int s1 = INT_MIN;
     int t1 = INT_MIN;
+    int fs = INT_MAX;
+    int ss = INT_MAX;
     for (int i = 0; i < n; i++)
     {
         if (a[i] > f1)
@@ -46,7 +53,18 @@ int main()
         {
             t1 = a[i];
         }
+
+        if (a[i] < fs)
+        {
+            ss = fs;
+            fs = a[i];
+        }
+        else if (a[i] < ss)
+        {
+            ss = a[i];
+        }
     }
-    cout << t1 << " " << s1 << " " << f1;
-    cout << endl;
+    int p1 = f1 * s1 * t1;
+    int p2 = f1 * fs * ss;
+    cout << max(p1, p2) << endl;
 }
