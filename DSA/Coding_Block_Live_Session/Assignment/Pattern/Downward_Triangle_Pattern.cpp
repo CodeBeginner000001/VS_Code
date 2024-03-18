@@ -28,15 +28,15 @@ int main()
      int k;
      int n;
      cin >> n;
-     for (int i = 0; i <= n; i++)
+     for (int i = 1; i <= n; i++)
      {
           int k = 0;
-          while (k <= i)
+          while (k < i - 1)
           {
                cout << " ";
                k++;
           }
-          int j = 5;
+          int j = n;
           while (j >= 0)
           {
                if (j - i >= 0)

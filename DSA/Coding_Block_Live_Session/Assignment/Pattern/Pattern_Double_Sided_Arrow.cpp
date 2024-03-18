@@ -34,6 +34,7 @@ Sample Output
 Explanation
 Catch the pattern and print it accordingly.
 */
+// Pattern_Double_Sided_Arrow.cpp
 #include <iostream>
 using namespace std;
 int main()
@@ -43,35 +44,55 @@ int main()
     for (int i = 0; i <= n / 2; i++)
     {
         int j = 0;
-        while (j < ((n - 1) - 2 * i))
+        while (j < n - 2 * i - 1)
         {
             cout << "  ";
             j++;
         }
-        j = 0;
-        while (j <= n / 2)
+        j = i + 1;
+        while (j >= 1)
         {
-            if (i + j >= n / 2)
-            {
-                cout << (n / 2 + 1) - j << " ";
-            }
-            else
-            {
-                cout << "  ";
-            }
+            cout << j << " ";
+            j--;
+        }
+        j = 0;
+        while (j < 2 * i - 1)
+        {
+            cout << "  ";
             j++;
         }
         j = 1;
-        while (j <= i)
+        while (i && j <= i + 1)
         {
-            if (i <= j)
-            {
-                cout << j + 1;
-            }
-            // else
-            // {
-            //     cout << "  ";
-            // }
+            cout << j << " ";
+            j++;
+        }
+        cout << endl;
+    }
+    for (int i = n / 2 - 1; i >= 0; i--)
+    {
+        int j = 1;
+        while (j < n - 2 * i)
+        {
+            cout << "  ";
+            j++;
+        }
+        j = i + 1;
+        while (j > 0)
+        {
+            cout << j << " ";
+            j--;
+        }
+        j = 0;
+        while (j < 2 * i - 1)
+        {
+            cout << "  ";
+            j++;
+        }
+        j = 1;
+        while (i && j <= i + 1)
+        {
+            cout << j << " ";
             j++;
         }
         cout << endl;

@@ -36,7 +36,7 @@ int main()
   for (int i = 0; i < n; i++)
   {
     int j = 1;
-    while (j < n - i)
+    while (j <= n - i)
     {
       cout << "  ";
       j++;
@@ -47,12 +47,12 @@ int main()
       if (j == 0 && i >= 0)
       {
         c = 1;
-        cout << "1  ";
+        cout << "1";
       }
       else
       {
         c = c * (i - j + 1) / j;
-        cout << " " << c << "  ";
+        cout << "   " << c;
       }
       j++;
     }

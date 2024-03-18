@@ -49,11 +49,11 @@ int main()
       {
          if ((i >= 0 && j == 0) || (j >= 0 && i == n / 2) || (i >= 0 && j == n / 2))
          {
-            cout << "* ";
+            cout << "*";
          }
          else
          {
-            cout << "  ";
+            cout << " ";
          }
          j++;
       }
@@ -62,11 +62,11 @@ int main()
       {
          if (j >= 1 && (i == 0 || i == n / 2))
          {
-            cout << "* ";
+            cout << "*";
          }
          else
          {
-            cout << "  ";
+            cout << " ";
          }
          j++;
       }
@@ -79,11 +79,11 @@ int main()
       {
          if ((i <= n / 2 && j == n / 2) || (i == n / 2))
          {
-            cout << "* ";
+            cout << "*";
          }
          else
          {
-            cout << "  ";
+            cout << " ";
          }
          j++;
       }
@@ -92,11 +92,11 @@ int main()
       {
          if (j == n / 2)
          {
-            cout << "* ";
+            cout << "*";
          }
          else
          {
-            cout << "  ";
+            cout << " ";
          }
          j++;
       }
