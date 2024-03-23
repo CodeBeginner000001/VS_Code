@@ -1,5 +1,7 @@
 /*
-Counting Sort
+Counting Sort(Unstable Approach)
+
+Unstable Approach: Because the order is not maintained of the element
 
 Given an array of N non-negative integers,design an algorithm to
 sort the array such that each array element is <= a given integer K.
