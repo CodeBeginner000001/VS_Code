@@ -36,3 +36,134 @@ Check which integer is present in both
 the arrays and add them in an array .
 Print this array as the ans.
 */
+
+#include <iostream>
+using namespace std;
+
+// 1st approach
+// time: O(n^2+nlog(n))
+// space: O(k)
+/* void inter(int arr1[], int arr2[], int arr3[], int n)
+{
+    int k = 0;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            if (arr1[i] == arr2[j])
+            {
+                arr3[k] = arr1[i];
+                arr2[j] = 0;
+                k++;
+                break;
+            }
+        }
+    }
+    sort(arr3, arr3 + k);
+    cout << "[";
+    for (int i = 0; i < k - 1; i++)
+    {
+        cout << arr3[i] << ", ";
+    }
+    cout << arr3[k - 1] << "]" << endl;
+}
+*/
+
+// 2nd approach
+// time:O( nlog(n)+nlog(n)+n+n ~ nlog(n)+n )
+// space: O(k)
+
+/*
+void inter(int arr1[], int arr2[], int arr3[], int n)
+{
+    int k = 0;
+    sort(arr1, arr1 + n);
+    sort(arr2, arr2 + n);
+    int i = 0;
+    int j = 0;
+    while (i < n & j < n)
+    {
+        if (arr1[i] == arr2[j])
+        {
+            arr3[k] = arr1[i];
+            k++;
+            i++;
+            j++;
+        }
+        else if (arr1[i] < arr2[j])
+        {
+            i++;
+        }
+        else
+        {
+            j++;
+        }
+    }
+    cout << "[";
+    for (int i = 0; i < k - 1; i++)
+    {
+        cout << arr3[i] << ", ";
+    }
+    cout << arr3[k - 1] << "]" << endl;
+}
+*/
+
+// time: nlogn+n ~ nlog(n)
+// space: O(1)
+void inter(int arr1[], int arr2[], int n)
+{
+    cout << "[";
+    sort(arr1, arr1 + n);
+    sort(arr2, arr2 + n);
+    int i = 0;
+    int j = 0;
+    int ans = -1;
+    while (i < n && j < n)
+    {
+        if (arr1[i] == arr2[j])
+        {
+            if (ans == -1)
+            {
+                cout << arr1[i];
+                i++;
+                j++;
+            }
+            else
+            {
+                cout << ", " << arr1[i];
+                i++;
+                j++;
+            }
+            ans = 2;
+        }
+        else if (arr1[i] < arr2[j])
+        {
+            i++;
+        }
+        else
+        {
+            j++;
+        }
+    }
+    cout << "]";
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    int arr1[n];
+    int arr2[n];
+    int arr3[] = {};
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr1[i];
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr2[i];
+    }
+    // inter(arr1, arr2, arr3, n);
+    inter(arr1, arr2, n);
+}

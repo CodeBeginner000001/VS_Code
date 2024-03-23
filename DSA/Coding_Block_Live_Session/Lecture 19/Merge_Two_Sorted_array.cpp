@@ -20,7 +20,8 @@ Output:
 */
 #include <iostream>
 using namespace std;
-
+// time: O(n+m)
+// space: O(n+m)
 void merge_two_sorted(int arr1[], int arr2[], int n, int m)
 {
     int k = 0;

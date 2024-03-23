@@ -20,6 +20,7 @@ Output
 #include <iostream>
 using namespace std;
 
+// time: O(n^2)
 void generate_pair(int arr[], int n)
 {
     for (int i = 0; i <= n - 2; i++)

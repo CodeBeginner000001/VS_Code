@@ -18,7 +18,8 @@ Output : 2
 
 #include <iostream>
 using namespace std;
-
+// time: O(n^2)
+// space: O(1)
 int targetSumPair(int arr[], int n, int T)
 {
     int count = 0;

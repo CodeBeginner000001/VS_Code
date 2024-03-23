@@ -18,6 +18,7 @@ Output : 2
 #include <iostream>
 using namespace std;
 
+// time: O(n)
 int targetsumpair(int arr[], int n, int t)
 {
     int count = 0;

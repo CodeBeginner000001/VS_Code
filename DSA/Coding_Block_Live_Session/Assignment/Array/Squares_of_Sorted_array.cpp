@@ -42,6 +42,7 @@ int main()
         cin >> arr[i];
     }
     int j = 0;
+    // time:n+nlogn
     while (j < n)
     {
         arr[j] *= arr[j];

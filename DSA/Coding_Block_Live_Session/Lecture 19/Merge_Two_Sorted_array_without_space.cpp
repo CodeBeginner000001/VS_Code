@@ -36,7 +36,8 @@ int main()
     {
         cin >> arr2[i];
     }
-
+    // time: O(n+m)
+    // space: O(1)
     int i = n - 1;
     int j = m - 1;
     int k = m + n - 1;

@@ -37,7 +37,7 @@ int main()
     {
         cin >> arr[i];
     }
-
+    // time: n^2
     for (int i = 1; i < n; i++)
     {
         int key = arr[i];

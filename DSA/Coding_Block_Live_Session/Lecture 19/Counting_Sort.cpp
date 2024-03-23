@@ -22,6 +22,8 @@ Output:
 #include <iostream>
 using namespace std;
 
+// time: n+n ~ O(n)
+// space: k+1 ~ O(k)
 void Count_sort(int arr[], int freq_count[], int n, int k)
 {
     for (int i = 0; i < n; i++)

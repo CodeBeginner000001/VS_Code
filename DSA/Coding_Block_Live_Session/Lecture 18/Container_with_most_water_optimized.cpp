@@ -16,7 +16,8 @@ Output : 49
 */
 #include <iostream>
 using namespace std;
-
+// time: O(n)
+//  space: O(1)
 int maxwater(int height[], int n)
 {
     int maxsofar = 0;

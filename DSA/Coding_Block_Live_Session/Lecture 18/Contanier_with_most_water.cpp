@@ -16,7 +16,7 @@ Output : 49
 */
 #include <iostream>
 using namespace std;
-
+// time: O(n^2)
 int maxwater(int height[], int n)
 {
     int maxsofar = 0;

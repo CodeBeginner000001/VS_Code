@@ -14,7 +14,8 @@ Output : 5
 */
 #include <iostream>
 using namespace std;
-
+// time: O(n)
+// space: O(1)
 int kadanes(int arr[], int n)
 {
     int x;

@@ -33,7 +33,7 @@ int main()
     {
         cin >> a[i];
     }
-    sort(a, a + m);
+    sort(a, a + m); // time : nlogn
     for (int i = 0; i < m; i++)
     {
         cout << a[i] << " ";

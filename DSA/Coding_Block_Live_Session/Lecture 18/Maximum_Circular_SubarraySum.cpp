@@ -19,6 +19,8 @@ Output : 14
 #include <iostream>
 using namespace std;
 
+// time: O[n]
+//  space: O(1)
 int maximum_subarray_sum(int arr[], int n)
 {
     int x = arr[0];
