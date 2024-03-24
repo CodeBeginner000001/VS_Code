@@ -19,11 +19,7 @@ Output -1 if the number is not found.
 
 Sample Input:
 5
-4
-5
-1
-2
-3
+4 5 1 2 3
 2
 Sample Output:
 3
@@ -32,3 +28,30 @@ Explanation:
 The given rotated array is [4, 5, 1, 2, 3].
 The element to be searched is 2 whose index is 3.
 */
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+
+    int t;
+    cin >> t;
+    bool flag = false;
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] == t)
+        {
+            cout << i << endl;
+            flag = true;
+            break;
+        }
+    }
+    if (!flag)
+        cout << "-1";
+}

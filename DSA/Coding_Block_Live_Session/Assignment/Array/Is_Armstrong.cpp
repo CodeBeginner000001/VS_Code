@@ -38,3 +38,42 @@ Use functions. Write a function to get check if the number is
 armstrong number or not. Numbers are armstrong if it is equal to
 sum of each digit raised to the power of number of digits.
 */
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int armstrong(int n)
+{
+    int m = n;
+    int count = 0;
+    while (n > 0)
+    {
+        n /= 10;
+        count++;
+    }
+    // cout << count << endl;
+    int sum = 0;
+    while (m > 0)
+    {
+        int s = m % 10;
+        sum += pow(s, count);
+        m /= 10;
+    }
+    return sum;
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    int a = armstrong(n);
+    if (a == n)
+    {
+        cout << "true" << endl;
+    }
+    else
+    {
+        cout << "false" << endl;
+    }
+    // cout << armstrong(n) << endl;
+}

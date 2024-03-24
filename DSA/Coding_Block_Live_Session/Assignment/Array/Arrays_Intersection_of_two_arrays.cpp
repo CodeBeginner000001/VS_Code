@@ -38,6 +38,7 @@ Print this array as the ans.
 */
 
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 // 1st approach

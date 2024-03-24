@@ -30,3 +30,25 @@ Explanation:
 The largest number that divides both N1 and N2 is
 called the GCD of N1 and N2.
 */
+#include <iostream>
+using namespace std;
+int main()
+{
+    // time: O(n1*n2)
+    // space: O(1)
+    int n1, n2;
+    cin >> n1 >> n2;
+    int GCD = min(n1, n2);
+    while (1)
+    {
+        if (n1 % GCD == 0 && n2 % GCD == 0)
+        {
+            cout << GCD << endl;
+            break;
+        }
+        else
+        {
+            GCD--;
+        }
+    }
+}
