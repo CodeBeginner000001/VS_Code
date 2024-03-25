@@ -38,3 +38,45 @@ Array = {5, 7, 9, 1, 2, 4, 6 ,8 ,3}. Target number = 10.
 Find any three number in the given array which sum to target number
 
 */
+#include <iostream>
+using namespace std;
+
+void array_target_sum(int arr[], int n, int t)
+{
+    sort(arr, arr + n);
+    for (int i = 0; i < n - 2; i++)
+    {
+        int l = n - 1;
+        int r = i + 1;
+        while (l > r)
+        {
+            if (arr[i] + arr[l] + arr[r] == t)
+            {
+                cout << arr[i] << ", " << arr[r] << " and " << arr[l] << endl;
+                l--;
+                r++;
+            }
+            else if (arr[i] + arr[l] + arr[r] > t)
+            {
+                l--;
+            }
+            else
+            {
+                r++;
+            }
+        }
+    }
+}
+int main()
+{
+    int n;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+    int t;
+    cin >> t;
+    array_target_sum(arr, n, t);
+}
