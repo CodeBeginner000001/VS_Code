@@ -49,3 +49,60 @@ Deepak should buy roses whose prices are 4 and 6.
 Explanation:
 Find two such kinds of price of roses which has sum up to equal to Deepak's Money.
 */
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main()
+{
+    int tc;
+    cin >> tc;
+
+    while (tc > 0)
+    {
+        int avail;
+        cin >> avail;
+
+        long int prize[avail];
+        for (int i = 0; i < avail; i++)
+        {
+            cin >> prize[i];
+        }
+
+        int balance;
+        cin >> balance;
+
+        sort(prize, prize+avail);
+
+        int s = 0;
+        int e = avail - 1;
+
+        int diff = 10000;
+        int minS = 0;
+        int minE = 0;
+
+        while (s < e)
+        {
+            if(prize[s]+prize[e]==balance)
+            {
+                if(diff>=(prize[e]-prize[s]))
+                {
+                    minS = s;
+                    minE = e;
+                    diff = prize[e] - prize[s];
+                }
+                s++;
+                e--;
+            }
+            else if (prize[s]+prize[e]<balance)
+            {
+                s++;
+            }
+            else
+            {
+                e--;
+            }
+        }
+        cout << "Deepak should buy roses whose prices are " << prize[minS] << " and " << prize[minE] <<"."<< endl;
+        tc--;
+    }
+}

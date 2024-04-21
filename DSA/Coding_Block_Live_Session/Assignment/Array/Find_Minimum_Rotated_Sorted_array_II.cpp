@@ -36,3 +36,61 @@ Sample Output:
 Explanation:
 Minimum element of the array is 1.
 */
+#include <iostream>
+using namespace std;
+int main()
+{
+    bool flag = false;
+    int n;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+    if (n == 0)
+    {
+        return -1;
+    }
+    if (n == 1)
+    {
+        cout << arr[0];
+    }
+
+    int s = 0;
+    int e = n - 1;
+
+    if (arr[s] < arr[e])
+    {
+        cout << arr[s];
+        return 0;
+    }
+
+    while (s <= e)
+    {
+        int m = s + (e - s) / 2;
+        if (m > 0 && arr[m] < arr[m - 1])
+        {
+            cout << arr[m];
+            flag = true;
+            break;
+        }
+        else if (arr[s] <= arr[m] && arr[m] > arr[e])
+        {
+            s = m + 1;
+        }
+        else if (arr[m] < arr[e])
+        {
+            e = m - 1;
+        }
+        else
+        {
+            e--;
+        }
+    }
+    if (!flag)
+    {
+        cout << arr[s];
+    }
+    cout << endl;
+}

@@ -78,8 +78,12 @@ int maxCircularSum(int a[], int n)
 /* Driver program to test maxCircularSum() */
 int main()
 {
-    int a[] = {11, 10, -20, 5, -3, -5, 8, -13, 10};
-    int n = sizeof(a) / sizeof(a[0]);
-    cout << "Maximum circular sum is " << maxCircularSum(a, n) << endl;
-    return 0;
+    int n;
+    cin >> n;
+    int a[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> a[i];
+    }
+    cout << maxCircularSum(a, n) << endl;
 }
