@@ -1,8 +1,6 @@
-
-![Learn-Data-Structures-and-Algorithms-Easily](https://github.com/CodeBeginner000001/Visual-Studio-Code/assets/92913917/d13c05b5-5cc9-4963-ae32-334f0c794ee1)
-
 # DSA in C++
-
+![Learn-Data-Structures-and-Algorithms-Easily](https://github.com/CodeBeginner000001/Visual-Studio-Code/assets/92913917/d13c05b5-5cc9-4963-ae32-334f0c794ee1)
+<br>
 This repository is dedicated to providing comprehensive implementations of Data Structures and Algorithms (DSA) in C++. It serves as a valuable resource for students, developers, and anyone interested in improving their understanding of DSA concepts and enhancing their problem-solving skills.
 
 ## Table of Contents
