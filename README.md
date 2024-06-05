@@ -184,7 +184,7 @@ Contributions to this repository are highly encouraged and appreciated! Whether 
 We appreciate your contributions and efforts to improve this repository!
 
 ## Contact
-For questions or suggestions, please contact Adarsh at ashu2100ag@gmail.com.
+<h3>For questions or suggestions, please contact Adarsh at ashu2100ag@gmail.com.</h3>
 ---
 
 This README provides a detailed guide to understanding and utilizing the DSA in C++ repository. It aims to serve as a comprehensive resource for learning and mastering data structures and algorithms in C++. Happy coding!
