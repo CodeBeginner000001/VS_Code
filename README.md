@@ -1,3 +1,5 @@
+
+
 # DSA in C++
 
 This repository is dedicated to providing comprehensive implementations of Data Structures and Algorithms (DSA) in C++. It serves as a valuable resource for students, developers, and anyone interested in improving their understanding of DSA concepts and enhancing their problem-solving skills.
@@ -10,6 +12,7 @@ This repository is dedicated to providing comprehensive implementations of Data 
 - [Usage](#usage)
 - [Content](#content)
 - [Contributing](#contributing)
+- [Contact](#Contact)
 
 ## Introduction
 
@@ -179,6 +182,8 @@ Contributions to this repository are highly encouraged and appreciated! Whether 
 
 We appreciate your contributions and efforts to improve this repository!
 
+## Contact
+For questions or suggestions, please contact Adarsh at ashu2100ag@gmail.com.
 ---
 
 This README provides a detailed guide to understanding and utilizing the DSA in C++ repository. It aims to serve as a comprehensive resource for learning and mastering data structures and algorithms in C++. Happy coding!
