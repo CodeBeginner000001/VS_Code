@@ -11,6 +11,7 @@ This repository is dedicated to providing comprehensive implementations of Data 
 - [Usage](#usage)
 - [Content](#content)
 - [Contributing](#contributing)
+- [License](#License)
 - [Contact](#Contact)
 
 ## Introduction
@@ -180,6 +181,9 @@ Contributions to this repository are highly encouraged and appreciated! Whether 
 5. Open a Pull Request in the original repository, providing a detailed description of your changes.
 
 We appreciate your contributions and efforts to improve this repository!
+
+## License
+This Branch is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 <h5>For questions or suggestions, please contact Adarsh at ashu2100ag@gmail.com.</h5>
