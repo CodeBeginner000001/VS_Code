@@ -51,14 +51,11 @@ int main()
             cout<<i<<" "<<j<<endl;
             break;
         }
-        else if(arr[i]+arr[j]>t)
+        else if((arr[i]+arr[j]>t)||(arr[i]+arr[j]<t))
         {
-            if(arr[i+1]+arr[j]>t) j--;
-            else i++;
-        }
-        else{
             if(arr[i+1]+arr[j]>t) j--;
             else i++;
         }
     }
 }
+
