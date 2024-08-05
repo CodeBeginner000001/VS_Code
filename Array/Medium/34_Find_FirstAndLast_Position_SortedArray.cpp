@@ -43,7 +43,7 @@ int main(){
     int e=n-1;
     int first_index=-1;
     int last_index=-1;
-    while(s<e)
+    while(s<=e)
     {
         if((arr[s]==target && arr[e]==target))
         {
@@ -80,3 +80,56 @@ int main(){
     }    
 
 }
+// leetcode
+/*
+// time complexity ~O(<n)
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& nums, int target) {
+    int n = nums.size();
+    int s=0;
+    int e=n-1;
+    int first_index=-1;
+    int last_index=-1;
+    vector<int>final_ans;
+    while(s<=e)
+    {
+        if((nums[s]==target && nums[e]==target))
+        {
+                first_index=s; 
+                last_index=e; 
+                break;  
+        }
+        else if((nums[s]==target || nums[e]==target))
+        {
+            if(nums[s]==target) 
+            {
+                first_index=s;
+                e--;
+            }else
+            if(nums[e]== target) 
+            {
+                last_index=e;
+                s++;
+            }    
+        }else if(nums[s]!=target)
+        {
+            s++;
+        }
+        else e--;
+        
+    }
+    if(first_index<0 && last_index<0)
+    {
+        final_ans.push_back(-1);
+        final_ans.push_back(-1);
+    }
+    else
+    {
+        final_ans.push_back(first_index);
+        final_ans.push_back(last_index);
+    }   
+    return final_ans;
+    }
+};
+*/

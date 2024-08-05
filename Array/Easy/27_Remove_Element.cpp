@@ -65,19 +65,41 @@ int main()
     cin>>val;
 
     int i=0;
+    int count=0;
     while(i<n)
     {
-        if(arr[i]==val)
+        if(arr[i]!=val)
         {
-            arr[i]=INT_MAX;
+            arr[count]=arr[i];
+            count++;
         }
         i++;
     }
-    for(int i=0;i<n;i++)
+    cout<<count<<endl;
+    for(int i=0;i<count;i++)
     {
-        if(arr[i]!=INT_MAX)
-        {
-            cout<<arr[i]<<" ";
-        }
+        cout<<arr[i]<<" ";
     }
 }
+
+// leetcode
+/*
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+    int n=nums.size();
+    int count=0;
+    // time complexity O(n)
+    for(int i=0;i<n;i++)
+    {
+        if(nums[i]!=val)
+        {
+          nums[count]=nums[i];  
+          count++;
+        }
+        
+    }
+    return count;
+    }
+};
+*/

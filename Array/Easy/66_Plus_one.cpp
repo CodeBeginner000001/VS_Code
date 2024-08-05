@@ -38,6 +38,7 @@ digits does not contain any leading 0's.
 */
 #include <iostream>
 using namespace std;
+// time complexity: O(N)
 int main()
 {
     int n;
@@ -45,31 +46,71 @@ int main()
     int arr[n];
     for (int i = 0; i < n; i++)
         cin >> arr[i];
-    
-    
 
-    if (n > 1)
+    // Increment the array by 1
+    for (int i = n - 1; i >= 0; i--)
     {
-        if ((arr[n - 1] += 1) > 9)
+        if (arr[i] == 9)
         {
-            arr[n - 2] = arr[n - 2] + 1;
-            arr[n - 1] = 0;
-        }
-        for (int i = 0; i < n; i++)
-        cout << arr[i] << " ";
-    }
-    else
-    {
-        if (arr[0]>8)
-        {
-            arr[0]=1;
-            arr[1]=0;
-            for(int i=0;i<=n;i++) cout<<arr[i]<< " ";
+            arr[i] = 0;
         }
         else
         {
-            cout<<(arr[0]+=1)<<endl;
+            arr[i]++;
+            break;
         }
     }
-    
+
+    // If all digits were 9, add a new digit 1 at the beginning
+    if (arr[0] == 0)
+    {
+        arr[-1] = 1;
+    }
+
+    // Print the resulting array
+    if (arr[-1] == 1)
+    {
+        for (int i = -1; i < n; i++)
+        {
+            cout << arr[i] << " ";
+        }
+    }
+    else{
+        for (int i = 0; i < n; i++)
+        {
+            cout << arr[i] << " ";
+        }
+    }
+
+    return 0;
 }
+
+// Leetcode
+/*
+class Solution {
+public:
+    vector<int> plusOne(vector<int>& digits) 
+    {
+    int n=digits.size();
+    for (int i = n - 1; i >= 0; i--)
+    {
+        if (digits[i] == 9)
+        {
+            digits[i] = 0;
+        }
+        else
+        {
+            digits[i]++;
+            break;
+        }
+    }
+
+    if (digits[0] == 0)
+    {
+        digits.insert(digits.begin()+ (0),1);
+    }
+    return digits;
+    }
+    // time complexity: O(N)
+};
+*/

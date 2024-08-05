@@ -58,3 +58,23 @@ int main()
     cout<<max_count<<endl;
     
 }
+// Leetcode
+/**
+class Solution {
+public:
+    int maximumWealth(vector<vector<int>>& accounts) {
+    int max_count=INT_MIN;
+    for(int i=0;i<accounts.size();++i)
+    {
+        int sum=0;
+        for(int j=0;j<accounts[i].size();++j)
+        {
+            sum+=accounts[i][j];
+        }
+        max_count=max(max_count,sum);
+    } 
+    return max_count;
+    }
+
+};
+*/

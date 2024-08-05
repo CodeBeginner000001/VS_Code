@@ -79,3 +79,31 @@ int main()
         cout << num << endl;
     }
 }
+
+// leetcode
+/*
+// time complexity ~ O(n+m)
+class Solution {
+public:
+    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+    float num; 
+    int n = nums1.size();
+    int m = nums2.size();
+    vector<int>merged(n+m);
+    merge(nums1.begin(),nums1.end(),nums2.begin(),nums2.end(),merged.begin());
+    // Finding Median
+    if ((m + n) % 2 == 0)
+    {
+        int mid1 = (m + n) / 2;
+        num = (merged[mid1 - 1] + merged[mid1]) / 2.0;
+        
+    }
+    else
+    {
+        int odd_mid = ceil((n + m) / 2);
+        num = merged[odd_mid] / 1.0;
+    }
+    return num;
+    }
+};
+*/

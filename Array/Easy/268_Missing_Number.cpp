@@ -66,7 +66,7 @@ int main()
         int arr_sum = 0;
         for (int i = 0; i < n; i++)
             arr_sum += arr[i];
-        if (total_sum == (arr[n - 1] + 1))
+        if (total_sum == (arr[n - 1]))
         {
             cout << total_sum;
         }
@@ -76,3 +76,44 @@ int main()
         }
     }
 }
+// leetcode
+/*
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+    int n= nums.size();
+    int final_ans=0;
+    if (n % 2 != 0)
+    {
+        int total_sum = n * ((n + 1) / 2);
+        int nums_sum = 0;
+        for (int i = 0; i < n; i++)
+            nums_sum += nums[i];
+        if (total_sum == (nums[n - 1] + 1))
+        {
+            final_ans=total_sum;
+        }
+        else
+        {
+            final_ans=total_sum - nums_sum;
+        }
+    }
+    else
+    {
+        int total_sum = (n + 1) * (n / 2);
+        int nums_sum = 0;
+        for (int i = 0; i < n; i++)
+            nums_sum += nums[i];
+        if (total_sum == (nums[n - 1]))
+        {
+            final_ans= total_sum;
+        }
+        else
+        {
+            final_ans= total_sum - nums_sum;
+        }
+    }
+    return final_ans;
+    }
+};
+*/

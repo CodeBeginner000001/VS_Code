@@ -44,3 +44,21 @@ int main()
     } 
     for(int i=0;i<2*n;i++) cout<<arr1[i]<< " ";
 }
+
+// using vectors it becomes different case and lot more easy to understand
+/*
+class Solution {
+public:
+    vector<int> shuffle(vector<int>& nums, int n) {
+    vector<int> nums1;
+    for(int i=0;i<n;i++)
+    {
+        nums1.push_back(nums[i]);
+        nums1.push_back(nums[n+i]);
+    }
+    nums.clear();
+    return nums1;
+    }
+};
+
+*/
