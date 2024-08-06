@@ -53,17 +53,11 @@ int main()
     int e = n - 1;
     while (s <e)
     {
-        int mid = s+(e-s)/2;
-        
-        if(nums[mid]<target)
+        if(nums[s]+nums[e]<target)
         {
-          e = mid-1;
-          count++;
-        }
-        else if(nums[mid]>=target)
-        {
-            s = mid+1;
-        }
+            count+=e-s;
+            s++;
+        }else e--;
     }
     cout << count;
 }
