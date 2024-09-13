@@ -1,5 +1,5 @@
 #include<iostream>
-
+#include<algorithm>
 bool comparator(int a,int b)
 {
     return a<b; // return true if you want a to be ordered before b in the sorted arr[] otherwise false (i.e., increasing order)
