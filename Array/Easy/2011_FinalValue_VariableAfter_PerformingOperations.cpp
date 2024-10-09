@@ -60,11 +60,11 @@ int main()
     int x = 0;
     for(int i=0;i<n;i++)
     {
-        if(arr[i][2]=='+' && arr[i][2]=='+')
+        if(arr[i][2]=='+')
         {
             x++;
         }
-        if(arr[i][2]=='-' && arr[i][2]=='-')
+        if(arr[i][2]=='-')
         {
             x--;
         }

@@ -1,9 +1,9 @@
 /**
-Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. 
+Given an integer array nums and an integer val, remove all occurrences of val in nums in-place.
 The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.
 Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:
 
-Change the array nums such that the first k elements of nums contain the elements which are not equal to val. 
+Change the array nums such that the first k elements of nums contain the elements which are not equal to val.
 The remaining elements of nums are not important as well as the size of nums.
 Return k.
 
@@ -25,7 +25,7 @@ for (int i = 0; i < actualLength; i++) {
 }
 If all assertions pass, then your solution will be accepted.
 
- 
+
 
 Example 1:
 
@@ -37,11 +37,11 @@ Example 2:
 
 Input: nums = [0,1,2,2,3,0,4,2], val = 2
 Output: 5, nums = [0,1,4,0,3,_,_,_]
-Explanation: Your function should return k = 5, with the first five elements of nums 
+Explanation: Your function should return k = 5, with the first five elements of nums
 containing 0, 0, 1, 3, and 4.
 Note that the five elements can be returned in any order.
 It does not matter what you leave beyond the returned k (hence they are underscores).
- 
+
 
 Constraints:
 
@@ -50,35 +50,35 @@ Constraints:
 0 <= val <= 100
 */
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
     int n;
-    cin>>n;
+    cin >> n;
     int arr[n];
-    for(int i=0;i<n;i++)
+    for (int i = 0; i < n; i++)
     {
-        cin>>arr[i];
+        cin >> arr[i];
     }
     int val;
-    cin>>val;
+    cin >> val;
 
-    int i=0;
-    int count=0;
-    while(i<n)
+    int i = 0;
+    int count = 0;
+    while (i < n)
     {
-        if(arr[i]!=val)
+        if (arr[i] != val)
         {
-            arr[count]=arr[i];
+            arr[count] = arr[i];
             count++;
         }
         i++;
     }
-    cout<<count<<endl;
-    for(int i=0;i<count;i++)
+    cout << count << endl;
+    for (int i = 0; i < count; i++)
     {
-        cout<<arr[i]<<" ";
+        cout << arr[i] << " ";
     }
 }
 
@@ -94,10 +94,10 @@ public:
     {
         if(nums[i]!=val)
         {
-          nums[count]=nums[i];  
+          nums[count]=nums[i];
           count++;
         }
-        
+
     }
     return count;
     }

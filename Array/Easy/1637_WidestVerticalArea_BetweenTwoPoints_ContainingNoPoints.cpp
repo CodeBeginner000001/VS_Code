@@ -35,7 +35,7 @@ int main()
     // time complexity : O(nlogn)
     int n;
     cin>>n;
-    vector<vector<int> >points(n,vector<int>(2));
+    vector<vector<int>>points(n,vector<int>(2));
     for(int i=0;i<n;i++) for(int j=0;j<2;j++) cin>>points[i][j];
     sort(points.begin(),points.end());
     // for(int i=0;i<points.size();i++){
