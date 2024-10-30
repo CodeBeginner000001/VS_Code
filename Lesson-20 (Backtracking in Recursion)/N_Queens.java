@@ -48,14 +48,13 @@ class N_Queens {
     public void saveboards(char[][] board, List<List<String>> allBoards) {
         String row;
         List<String> newBoard = new ArrayList<>();
-        for (char[] board1 : board) {
+        for (int i = 0; i < board.length; i++) {
             row = "";
             for (int j = 0; j < board[0].length; j++) {
-                if (board1[j] == 'Q') {
+                if (board[i][j] == 'Q')
                     row += 'Q';
-                } else {
+                else
                     row += '.';
-                }
             }
             newBoard.add(row);
         }

@@ -2,7 +2,7 @@ public class PermutationOfString{
     public static void permutation(String str , String permu)
     {
 
-        // time complexity : O(n!)
+        // time complexity : O(n*n!)
         // base case
         if(str.length()==0)
         {
