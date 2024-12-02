@@ -50,5 +50,13 @@ class ArrayLists{
         /* Sorting */
         Collections.sort(list);
         System.out.println(list);
+
+        /*remove all */
+        list.removeAll(list);
+        System.out.println(list);
+        
+        /*clear */
+        list.clear();
+        System.out.println(list);
     }
 }

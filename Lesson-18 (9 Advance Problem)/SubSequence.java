@@ -1,3 +1,23 @@
+/*
+ * 
+ *          Wanted to be included 
+ *                             (a)               
+                             /      \
+                          (ab)      (a_)
+                         /   \     /   \
+                      (abc) (ab_) (a_c) (a__)
+                     |      |      |     |
+                    ""    "ab"   "ac"  "a"
+
+ * Not wanted to be included
+*                               (_)
+                          /             \
+                       (_b)            (__)
+                      /   \           /   \
+                   (_bc) (_b_)    (__c)  (___)
+                    |     |         |     |
+                   "bc"  "b"        "c"    ""
+ */
 public class SubSequence {
     public static void subsequence(String str, int i , String newStr)
     {
@@ -11,7 +31,7 @@ public class SubSequence {
         // recursive case
         // to be included 
         subsequence(str, i+1, newStr+str.charAt(i));
-        // to be excluded
+        // to be not included
         subsequence(str, i+1, newStr);
     }
     public static void main(String args[])

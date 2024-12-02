@@ -7,7 +7,7 @@ public class SumOf_n_NaturalNumber {
         // base case
         if(n==0)
         {
-            System.out.println("The sum of first n natural number is : "+sum);
+            System.out.println("The sum of first n natural number is : "+ sum);
             return;
         }
         // calculation
