@@ -7,8 +7,6 @@
 Welcome to the **LeetCode Solutions Repository**!  
 This repository contains solutions to coding problems from [LeetCode](https://leetcode.com/), a platform for practicing data structures, algorithms, and competitive programming. The problems are categorized based on their difficulty levels: **Easy**, **Medium**, and **Hard**.
 
----
-
 ## Table of Contents
 
 1. [About LeetCode](#about-leetcode)
@@ -18,8 +16,6 @@ This repository contains solutions to coding problems from [LeetCode](https://le
 5. [How to Contribute](#how-to-contribute)
 6. [Contact](#contact)
 7. [Links](#links)
-   
----
 
 ## About LeetCode
 
@@ -31,11 +27,10 @@ LeetCode is one of the most popular platforms for improving coding skills and pr
 
 Visit [LeetCode](https://leetcode.com/) to start practicing and improving your problem-solving abilities.
 
----
-
 ## Folder Structure
 
 The repository is organized into three main folders based on problem difficulty:
+
 LeetCode/
 ├── Easy/
 │   ├── Problem1.cpp
@@ -58,8 +53,6 @@ Each file is named after the problem in the format:
 `<ProblemName>.<extension>`  
 Example: `TwoSum.cpp`, `BinaryTreeInorderTraversal.py`.
 
----
-
 ## Technologies Used
 
 The solutions are implemented in various programming languages, including:
@@ -68,16 +61,12 @@ The solutions are implemented in various programming languages, including:
 - **Java**
 - **JavaScript**
 
----
-
 ## Features
 
 - **Categorized Solutions**: Problems are organized by difficulty for easy access.
 - **Clean Code**: Each solution is well-documented and follows best practices for readability.
 - **Regular Updates**: The repository is frequently updated with new problems and solutions.
 - **Interview Preparation**: The solutions help with coding interview preparation and algorithmic thinking.
-
----
 
 ## How to Contribute
 
@@ -90,8 +79,6 @@ Contributions are always welcome! To add new solutions or improve existing ones,
 5. Push to your branch: `git push origin feature/your-feature-name`.
 6. Submit a pull request describing your changes.
 
----
-
 ## Contact
 
 For questions, suggestions, or feedback, feel free to contact me via:
@@ -99,18 +86,10 @@ For questions, suggestions, or feedback, feel free to contact me via:
 - **GitHub Issues**: Open an issue to discuss anything related to the repository.
 - **Email**: ashu2100ag@gmail.com
 
----
-
 ## Links
 
 - [LeetCode](https://leetcode.com/)
 - [My LeetCode Profile](https://leetcode.com/u/Adarsh_Goyal01/)  *(Replace "your-username" with your actual username)*
 
----
-
 Happy Coding!  
 Improve your problem-solving skills with [LeetCode](https://leetcode.com/) and prepare for your next coding interview! 🚀
-
----
-
-This version now includes a **Links** section with links to the main LeetCode platform and your profile. Just replace "your-username" with your actual LeetCode username in the profile link.
