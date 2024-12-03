@@ -1,6 +1,6 @@
 # Java Learning Journey
 <p align="center">
-  ![Java-Optimization](https://github.com/user-attachments/assets/7ec82a48-d8b7-4fef-bf64-9fce34611c5b)
+![Java-Optimization](https://github.com/user-attachments/assets/3ee5e357-52cb-41de-afe2-ec2fbc4a8511)
 </p>
 This repository contains the lessons and exercises I've done while learning Java from the *Apna College* YouTube playlist. Java is one of the most widely used programming languages due to its portability, efficiency, and scalability. I have structured this repository by organizing different lessons and projects under their respective folders to keep everything organized and easy to navigate.
 
