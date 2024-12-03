@@ -30,21 +30,6 @@ Visit [LeetCode](https://leetcode.com/) to start practicing and improving your p
 ## Folder Structure
 
 The repository is organized into three main folders based on problem difficulty:
-
-LeetCode/
-├── Easy/
-│   ├── Problem1.cpp
-│   ├── Problem2.js
-│   └── Problem3.py
-├── Medium/
-│   ├── Problem1.cpp
-│   ├── Problem2.js
-│   └── Problem3.py
-└── Hard/
-    ├── Problem1.cpp
-    ├── Problem2.js
-    └── Problem3.py
-
 - **Easy/**: Contains solutions to easier problems that are suitable for beginners.
 - **Medium/**: Contains solutions to problems that require more advanced problem-solving techniques.
 - **Hard/**: Contains solutions to the most challenging problems, which involve complex algorithms and data structures.
@@ -89,7 +74,7 @@ For questions, suggestions, or feedback, feel free to contact me via:
 ## Links
 
 - [LeetCode](https://leetcode.com/)
-- [My LeetCode Profile](https://leetcode.com/u/Adarsh_Goyal01/)  *(Replace "your-username" with your actual username)*
+- [My LeetCode Profile](https://leetcode.com/u/Adarsh_Goyal01/)
 
 Happy Coding!  
 Improve your problem-solving skills with [LeetCode](https://leetcode.com/) and prepare for your next coding interview! 🚀
